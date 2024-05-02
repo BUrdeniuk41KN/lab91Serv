@@ -1,0 +1,6 @@
+[build]
+  command = "npm run build"
+
+[context.production.environment]
+  NODE_ENV = "production"
+  command = "json-server --watch db.json --port 5000"
