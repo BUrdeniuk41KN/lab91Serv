@@ -3,3 +3,8 @@
 [context.production.environment]
   NODE_ENV = "production"
   command = "json-server --watch db.json --port 5000"
+
+[[redirects]]
+  from = "/*"
+  to = "http://localhost:5000/*"
+  status = 200
